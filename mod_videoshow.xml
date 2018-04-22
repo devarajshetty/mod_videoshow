@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>video show Module</name>
+    <author>devaraj@spinzsoft</author>
+    <version>1.0.0</version>
+    <description>Module For Upload And Show Videos.</description>
+    <files>
+        <filename>mod_videoshow.xml</filename>
+        <filename module="mod_videoshow">mod_videoshow.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+      <config>
+    <fields name="params">
+      <fieldset name="General">
+      <field 					
+          name="bg_img" 					
+          type="media" 					
+          label="Background Image"	
+          description="Select The Image"					
+          default=""					
+          filter="string" 				
+      />
+       <field 					
+          name="bg_video" 					
+          type="media" 					
+          label="Video"	
+          description="Select The Video"					
+          default=""					
+          filter="string" 				
+      />
+        </fieldset>
+    </fields>
+  </config>
+  
+  
+</extension>
